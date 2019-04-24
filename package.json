@@ -1,10 +1,14 @@
 {
-  "name": "typescript-starter",
+  "name": "node-binary",
   "version": "1.0.0",
-  "description": "A simple starter for typescript",
+  "description": "An encoder and decoder for binary strings",
   "main": "dist/index.js",
+  "bin": {
+    "binary": "dist/bin.js"
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,17 @@
-import { sum } from './sum'
+import { encode, decode } from './index'
 
-let result;
-console.log(typeof (+process.argv[1]));
+let args = process.argv
 
-if (process.argv[3]) {
-  result = sum(+process.argv[2], +process.argv[3])
+if (args[1] == '-d' || args[1] == '--decode') {
+  console.log(decode(args[2].toString()))
+} else if (args[1] == '-e' || args[1] == '--encode') {
+  console.log(encode(+args[2]))
 } else {
-  result = sum(+process.argv[1], +process.argv[2])
+  console.log(`
+Unknown option.
+
+Usage:
+binary -d/--decode 0110101
+binary -e/--encode 3895274
+`)
 }
-console.log(result)

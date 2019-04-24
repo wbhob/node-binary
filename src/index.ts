@@ -1,1 +1,2 @@
-export { sum } from './sum'
+export { decode } from './decode'
+export { encode } from './encode'

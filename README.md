@@ -5,7 +5,7 @@ This project is a simple encoder/decoder of binary numbers. `encode()` returns a
 ## Usage
 
 ```typescript
-import {encode, decode} from 'node-binary'
+import { encode, decode } from 'node-binary'
 
 encode(23) // returns '10111'
 decode('10110') // returns '22'
@@ -13,7 +13,7 @@ decode('10110') // returns '22'
 
 ## Contributing
 
-If you want to contribute your own sorting algorithm, implement it in TypeScript in the `src/` directory. Add a test file in `__tests__/` to make sure it works properly – you can just copy one of the other testing files and substitute in your sorting algorithm.
+If you want to contribute, implement it in TypeScript in the `src/` directory. Add a test file in `__tests__/` to make sure it works properly – you can just copy one of the other testing files and substitute in your sorting algorithm.
 
 ## License
 

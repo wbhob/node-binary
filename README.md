@@ -1,6 +1,6 @@
 # node-binary
 
-This project is a simple encoder/decoder of binary numbers. `encode()` returns a binary string, and `decode()` returns a native number.
+This project is a simple encoder/decoder of binary numbers. `encode()` returns a binary string, and `decode()` returns a native number. Limited by your JavaScript engine's `Number.MAX_VALUE` value, but may also yield inaccurate results for numbers greater than `Number.MAX_SAFE_INTEGER`.
 
 ## Usage
 

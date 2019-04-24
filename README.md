@@ -1,6 +1,6 @@
 # node-binary
 
-This project is a simple encoder/decoder of binary numbers. `encode()` returns a binary string, and `decode()` returns a native number.
+This project is a simple encoder/decoder of binary numbers. `encode()` returns a binary string, and `decode()` returns a native number. Works with numbers up to `2^1024 - 1`
 
 ## Usage
 
